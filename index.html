@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/personal.css">
+    <link rel="stylesheet" type="text/css" href="css/mainboard.css">
+    <link rel="stylesheet" type="text/css" href="css/boxs.css">
+    <link rel="stylesheet" type="text/css" href="css/ks.css">
+      <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <title>Schule</title>
+
+  </head>
+
+  <body >
+    <div class="container" align="center">
+      <div class="top">
+        <div id="hhs">   <h2>Hermann Harry Schmitz Weiterbildungskolleg der Stadt Düsseldorf - Abendrealschule</h2>   </div>
+
+      </div>
+
+      <div class="left">
+        <div class="haupt">
+          <table>
+            <tr class="blueHeader">
+              <td> <h3>Hauptmenü </h3></td>
+            </tr>
+            <tr>
+              <td>
+                <ul class="hoverStyle">
+                  <li>Anmeldung</li>
+                  <li>Anmeldetermine</li>
+                  <li>Fächer</li>
+                  <li>Schulsozialarbeit</li>
+                  <li>Fotogalerie</li>
+                  <li>Kontakt</li>
+                  <li>Anfahrt</li>
+                  <li>Impressum</li>
+                  <li>Terminvorschau</li>
+                  <li>Geschichten</li>
+                  <li>Studenplan</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="weblinks">
+          <table>
+            <tr class="blueHeader" >
+              <td><h3>Weblinks</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <ul class="hoverStyle">
+                  <li>Herrmann-Harry-Schmitz-Societät</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="mainboard">
+        <div class="aktuelle effect1">
+          <h3>Aktuelle</h3>
+          <table>
+            <tr>
+              <td>Anmeldung zum Sommersemester 2020</td>
+            </tr>
+            <tr>
+              <td>29.01.2020 Um 12:00 - 14:00 Uhr</td>
+            </tr>
+          </table>
+        </div>
+<!--Started Photo galary -->
+        <div class="gallary effect1">
+          <h3>Image Gallary</h3>
+
+          <div class="row">
+            <div class="column">
+              <img src="img/gallary1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/gallary2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/gallary3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/gallary4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/gallary5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+          </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 5</div>
+              <img src="img/gallary1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 5</div>
+              <img src="img/gallary2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 5</div>
+              <img src="img/gallary3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="img/gallary4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="img/gallary5.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+              <img class="demo cursor" src="img/gallary1.jpg" style="width:100%" onclick="currentSlide(1)" alt="text">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/gallary2.jpg" style="width:100%" onclick="currentSlide(2)" alt="text">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/gallary3.jpg" style="width:100%" onclick="currentSlide(3)" alt="text">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/gallary4.jpg" style="width:100%" onclick="currentSlide(4)" alt="text">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/gallary5.jpg" style="width:100%" onclick="currentSlide(5)" alt="text">
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function openModal() {
+            document.getElementById("myModal").style.display = "block";
+          }
+
+          function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+          }
+
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+        </div>
+<!-- Ended Photo galary -->
+      </div>
+<!-- mainboard ended here  -->
+
+      <div class="right">
+        <div class="newInfo">
+          <table >
+            <tr>
+              <td><h4>Neue Info </h4> </td>
+            </tr>
+            <tr>
+              <td>
+                <ul class="liStyle">
+                  <li>Plan Montag</li>
+                  <li>Plan Montag</li>
+
+                </ul>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="social">
+          <table>
+            <tr>
+              <td><h4>Aktuelle Info bei</h4></td>
+            </tr>
+            <tr class="socialTabs">
+              <td>
+                <a href="facebook">Facebook</a>
+                <a href="twitter" class="tw">Twitter</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="download">
+            <h4>Download</h4>
+            <ul class="liStyle">
+              <li>Mathematik</li>
+              <li>Informatik</li>
+            </ul>
+        </div>
+      </div>
+
+<!-- kusre und Semester section starts here -->
+  <div class="ks">
+    <h3 class="headingstyle">Integration Kurse </h3>
+    <div class="kurse">
+      <div>
+        <div class="Vorkurs">
+          <h3>1st</h3>
+          <a href="www.g.com"><h2>zum <br> Kurs</h2> </a>
+        </div>
+        <div class="vkInfo">
+          <h4>Vorkurs</h4>
+          <p> Sie Ihren Schreibstil. Das funktioniert mit deutschen Texten bis zu einer Länge von 15.000 Zeichen (Rest wird abgeschnitten). Für ein sinnvolles oder Professoren müssen hier tapfer sein!
+  Das BlaBlaMeterviel heiße Luft sich in.</p>
+        </div>
+      </div>
+    </div>
+
+<!-- here starts semster section  -->
+<h3 class="headingstyle">Unsere Semster</h3>
+    <div class="semster">
+
+      <div>
+        <div class="semsterBox">
+          <div class="semsterId">
+            <h3>1st</h3>
+            <a href="www.g.com"><h2>zum <br> Kurs</h2> </a>
+          </div>
+          <div class="semsterInfo">
+            <h4>Erste Semster</h4>
+            <p> und testen Sie Ihren Schreibstil. Das funktioniert mit deutschen Texten bis zu einer Länge von 15.000 Zeichen (Rest wird abgeschnitten). Für ein sinnvolles oder Professoren müssen hier tapfer sein!
+  Das BlaBlaMeterLuft sich in <a href="#"> weiter </a></p>
+          </div>
+        </div>
+      <div class="semsterBox">
+        <div class="semsterId">
+          <h3>2th</h3>
+          <a href="www.g.com"><h2>zum <br> Kurs</h2> </a>
+        </div>
+        <div class="semsterInfo">
+          <h4>Zweite Semster</h4>
+          <p>Kopieren Sie Ihren Text in das freie Feld und testen Sie Ihren Schreibstil. Das funktioniert mit deutschen Texten bis zu einer Länge von 15.000 Zeichen (Rest wird abgeschnitten). Für ein sinnvolles oder Professoren müssen hier tapfer sein!
+Das BlaBlaMeter entlarvt schonungslos, wieviel heiße Luft sich in <a href="#"> weiter </a></p>
+        </div>
+      </div>
+      <div class="semsterBox">
+        <div class="semsterId">
+          <h3>3th</h3>
+          <a href="www.g.com"><h2>zum <br> Kurs</h2> </a>
+        </div>
+        <div class="semsterInfo">
+          <h4>Hauptschulabschluss</h4>
+          <p>Kopieren Sie Ihren Text in das freie Feld und testen Sie Ihren Schreibstil. Das funktioniert mit deutschen Texten bis zu einer Länge von 15.000 Zeichen (Rest wird abgeschnitten). Für ein sinnvolles oder Professoren müssen hier tapfer sein!
+Das BlaBlaMeter entlarvt schonungslos, wieviel heiße Luft sich in <a href="#"> weiter </a></p>
+        </div>
+      </div>
+      <div class="semsterBox">
+        <div class="semsterId">
+          <h3>4th</h3>
+          <a href="www.g.com"><h2>zum <br> Kurs</h2> </a>
+        </div>
+        <div class="semsterInfo">
+          <h4>Realschulabschluss</h4>
+          <p> Sie Ihren Schreibstil. Das funktioniert mit deutschen Texten bis zu einer Länge von 15.000 Zeichen (Rest wird abgeschnitten). Für ein sinnvolles oder Professoren müssen hier tapfer sein!
+Das BlaBlaMeter entlarvt schonungslos, wieviel heiße Luft sich in <a href="www" target="_blank"> weiter </a></p>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- personal <section-->
+<!--
+      <div class="pContent">
+        <div class="personal">
+
+            <div class="person">
+              <div class="pPhoto">
+
+              </div>
+              <h3>Name</h3>
+              <div class="pText">
+                Text
+              </div>
+            </div>
+            <div class="person">
+              <div class="pPhoto">
+
+              </div>
+              <h3>Name</h3>
+              <div class="pText">
+                Text
+              </div>
+            </div>
+            <div class="person">
+              <div class="pPhoto">
+
+              </div>
+              <h3>Name</h3>
+              <div class="pText">
+                Text
+              </div>
+            </div>
+            <div class="person">
+              <div class="pPhoto">
+
+              </div>
+              <h3>Name</h3>
+              <div class="pText">
+                Text
+              </div>
+            </div>
+            <div class="person">
+              <div class="pPhoto">
+
+              </div>
+              <h3>Name</h3>
+              <div class="pText">
+                Text
+              </div>
+            </div>
+            <div class="person">
+              <div class="pPhoto">
+
+              </div>
+              <h3>Name</h3>
+              <div class="pText">
+                Text
+              </div>
+            </div>
+
+        </div>
+      </div>
+ -->
+
+      <div class="footer">
+        <div class="kontakt">
+          <table class="mainTab" >
+            <tr>
+              <td><h3> Kontaktieren Sie uns!</h3></td>
+              <td><h3>Address </h3></td>
+            </tr>
+            <tr>
+              <td>
+                <table class="subTab">
+                  <tr>
+                    <td><h4>Tel</h4></td>  <td>(0211) 89256 42 </td>
+                  </tr>
+                  <tr>
+                    <td><h4>Fax</h4></td>  <td>(0211) 89256 42</td>
+                  </tr>
+                  <tr>
+                    <td><h4>Mail</h4></td>  <td>ars.emilbarthstr@schule.duessledorf.de</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                Hermann-Harry-Schmitz-Weiterbildungskolleg <br>
+                Emil-Barth-Str. 45 <br>
+                40595 Düsseldorf <br> <br> <br> <br>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"> <p>Sie erreichen uns telefonisch zwischen 12 Uhr und 19:30 Uhr von Montag bis Donnerstag.</p> </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
