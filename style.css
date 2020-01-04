@@ -37,7 +37,7 @@ h3 {
 .top {
   grid-area: top;
   overflow: hidden;
-  background-image: url('../img/img1.jpg');
+  background-image: url('./img1.jpg');
 
 }
 .top h2 {
