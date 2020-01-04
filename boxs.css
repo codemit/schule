@@ -1,0 +1,83 @@
+.right h4{
+  text-align: left;
+  margin-top: 0%;
+  padding: 2px;
+}
+.right div{
+  color: white;
+  padding:5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.newInfo table, .download table{
+  width: 100%;
+}
+.newInfo ul, .download ul{
+  margin-top: -25px;
+  font-family: verdana;
+  list-style: none;
+  font-size: 10pt;
+  width: 95%;
+  text-align: left;
+  padding: 5px;
+}
+
+.newInfo{
+  grid-area: newInfo;
+  background: rgb(255,93,93);
+  background: linear-gradient(180deg, rgba(255,93,93,1) 0%, rgba(247,51,51,1) 100%);
+  height: 100px;
+}
+
+.social{
+  grid-area: social;
+  background: rgb(65,134,255);
+  background: linear-gradient(180deg, rgba(65,134,255,1) 0%, rgba(2,79,214,1) 100%);
+  height: 100px;
+}
+.social a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px;
+  margin: 0px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+.socialTabs td{
+  padding: 10px
+}
+
+.tw {
+  background-color: #33CCFF;
+}
+
+.socialTabs a:hover{
+  background-color: #ffffff;
+  color: #0556e4;
+}
+
+
+.download{
+  grid-area: download;
+  background: rgb(255,91,21);
+  background: linear-gradient(180deg, rgba(255,91,21,1) 6%, rgba(170,54,0,1) 100%);
+}
+
+.download ul li, .newInfo ul li{
+
+  font-weight: bold;
+  padding: 5px;
+  width: 95%;
+}
+.download ul li:hover, .newInfo ul li:hover{
+  color: red;
+  background-color: white;
+  font-weight: bold;
+  padding: 5px;
+  width: 95%;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+
+}
