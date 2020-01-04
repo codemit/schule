@@ -1,0 +1,185 @@
+.mainboard{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    "aktuelle"
+    "gallary"
+    ;
+}
+.mainboard div{
+  margin-bottom: 10px;
+}
+.aktuelle{
+  grid-area: aktuelle;
+}
+.gallary{
+  grid-area: gallary;
+}
+
+.aktuelle, .gallary {
+  border: 0.5px solid lightgray;
+  overflow: hidden;
+  padding: 0px;
+}
+
+
+.effect1, .gallary, .ks{
+    -webkit-box-shadow: 0 5px 6px -6px #777;
+       -moz-box-shadow: 0 5px 6px -6px #777;
+            box-shadow: 0 5px 6px -6px #777;
+}
+
+.aktuelle h3, .gallary h3 {
+  border-bottom: 0.3px solid lightgray;
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 100%;
+  color:white;
+  background-color: #f7444e;
+}
+
+.aktuelle table  {
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/**Photo gallary **/
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 10%;
+  top: 5%;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  margin-left: -50%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: red;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
